@@ -26,6 +26,7 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+
 .hidden-heading {
     display: none;
 }
@@ -41,21 +42,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-
-
 }
-
 header a {
     text-decoration: none;
     color: inherit;
 }
-
-#menu {
+#menu {    
     list-style-type: none;
     letter-spacing: 4px;
     font-size: 110%;
 }
-
 #menu>li {
     margin-bottom: 1em;
 }
@@ -164,12 +160,14 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 #times {
     background: url('../images/dublin-city.webp') no-repeat center / cover;
     display: flex;
     flex-wrap: wrap;
 }
-#times > div {
+
+#times>div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
@@ -180,9 +178,20 @@ main {
     /* creates grid of meetup times divs ove the background inage */
     border: 2px solid white;
 }
+
 #times h3 {
     /* override the hearing colour set in general styles */
     color: #fafafa;
+}
+
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
 }
 
 /* footer */
@@ -199,6 +208,7 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+/* media query: tablets and larger (768px and up) */
 
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
