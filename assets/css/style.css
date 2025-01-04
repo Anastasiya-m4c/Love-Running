@@ -43,15 +43,18 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
-#menu {    
+
+#menu {
     list-style-type: none;
     letter-spacing: 4px;
     font-size: 110%;
 }
+
 #menu>li {
     margin-bottom: 1em;
 }
@@ -208,7 +211,14 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
-/* media query: tablets and larger (768px and up) */
+
+/* media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -270,6 +280,9 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+    #photos {
+        column-count: 3;
+    }
 
 }
 
@@ -281,6 +294,9 @@ main {
 
         border-bottom: 1px solid #3a3a3a;
 
+    }
+    #photos {
+        column-count: 4;
     }
 
 }
